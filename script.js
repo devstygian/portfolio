@@ -18,9 +18,9 @@ function toggleProject(button) {
 
 
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+const navLinks = document.getElementById('nav');
 
 hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+    navLinks.classList.toggle('action');
 });
 
