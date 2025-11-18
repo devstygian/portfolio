@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Stygian | Portfolio</title>
+
+    <!-- Google Font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/assents/styles/style.css">
+</head>
+
+<body>
+
+    <!-- ------------ NAVBAR ------------ -->
+    <nav>
+        <div class="logo"><a href="#home" style="font-size: 20px;">STY</a></div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ------------ HERO SECTION ------------ -->
+    <section id="home">
+        <h1>Joshua Alvarez</h1>
+        <p>I'm A Full Stack Web Developer</p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- ------------ ABOUT SECTION ------------ -->
+    <section id="about">
+        <h2>About Me</h2><br>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    I am Joshua -a third-year Information Technology student and and a hands-on developer from the Philippines.
+                    I build web applications. I work with HTML, CSS, JavaScript (For frontend) PHP, MySQL, (For Backend) and C# (WinForms).
+                    I create functional systems like barangay portals, login authentication,
+                    and information management platforms. If you want a teammate who learns fast and ships working demos, let's connect.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="/assents/img/Null.jpg" alt="Null">
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------ PROJECTS SECTION ------------ -->
+    <section id="projects">
+        <h2>Projects</h2><br>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Barangay Information System</h3>
+                <p>A full online portal for residents to request documents.</p>
+                <button class="btn"  onclick="toggleProject(this)">View Project</button>
+                 <!-- Hidden project image -->
+                <div class="project-image">
+                     <a href="https://github.com/devstygian/Saklaw">
+                        <img src="/assents/img/landing-page.png" alt="Barangay Project">
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Login Authentication System</h3>
+                <p>A secure login system with user roles and permissions.</p>
+                <button class="btn"  onclick="toggleProject(this)">View Project</button>
+                <!-- Hidden project image -->
+                <div class="project-image">
+                        <a href="#home">
+                            <img src="/assents/img/cs.jpg" alt="Barangay Project">
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------ Email SECTION ------------ -->
+    <section id="contact">
+    <h2>Contact</h2><br>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <form action="send_email.php" method="POST" id="emailForm">
+                <input type="text" name="name" placeholder="Enter Name" required>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- ------------ CONTACT SECTION ------------ -->
+    <section id="contact">
+        <div class="contact-container2">
+            <div class="socials">
+                <a href="#">Twitter(X)</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------ FOOTER ------------ -->
+    <footer>
+        Copyright © Devstygian 2024
+    </footer>
+
+    <!-- External JS -->
+    <script src="/assents/styles/script.js"></script>
+
+</body>
+</html>
