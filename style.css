@@ -366,12 +366,13 @@ footer {
         left: -100%;
         top: 4rem;
         flex-direction: column;
-        background-color: rgb(15, 15, 15);
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(12px);
+        background: rgba(0,0,0,0.55);
+        border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
     .nav-menu.active {
@@ -385,6 +386,7 @@ footer {
     .hamburger {
         display: block;
         cursor: pointer;
+        
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -504,6 +506,14 @@ section {
         /*border: 1px solid red;*/
         
         padding: 0 50px;
+    }
+}
+@media(max-width: 600px){
+    .hamburger{
+        margin-right: -15%;
+    }
+    .nav-logo{
+        margin-left: -15%;
     }
 }
 @media(max-width: 500px){
