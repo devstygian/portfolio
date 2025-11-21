@@ -510,7 +510,7 @@ section {
 }
 @media(max-width: 600px){
     .hamburger{
-        margin-right: -15%;
+        margin-right: -15%; 
     }
     .nav-logo{
         margin-left: -15%;
@@ -568,5 +568,13 @@ section {
     }*/
     .socials{
         display: inline-block;
+    }
+}
+@media(max-width: 400px){
+    .hamburger{
+        margin-right: -35%;
+    }
+    .nav-logo{
+        margin-left: -35%;
     }
 }
