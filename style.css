@@ -278,7 +278,7 @@ h2{
     display: inline-block;
     margin: 10px;
     padding: 8px 15px;
-    border: 1px solid rgba(255,255,255,0.15);
+    /*border: 1px solid rgba(255,255,255,0.15);*/
     border-radius: 8px;
     color: #ddd;
     text-decoration: none;
@@ -408,23 +408,23 @@ section {
         font-size: 20px;
         display: flex;
         font-family: 'Arial Narrow', Arial, sans-serif;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         
         padding: 0 50px;
     }
 }
 @media(max-width: 500px){
-/*About*/
+/*About
     .about-container{
         border: 1px solid rgb(251, 255, 0);
-        }
+        }*/
     .about-text{
         text-align:center;
         max-height: 100%;
         font-size: 15px;
         display: flex;
         font-family: 'Arial Narrow', Arial, sans-serif;
-        border: 1px solid red;
+       /* border: 1px solid red;*/
         padding: 0 50px;
     }
 
@@ -437,7 +437,7 @@ section {
     #projects{
         max-width: 100%;
         width: 100%;
-        border: red 1px solid;
+        /*border: red 1px solid;*/
 
     }
     .projects-container{
@@ -450,19 +450,19 @@ section {
     .project-card{
         margin-bottom: 50px;
     }
-/*Email*/
+/*Email
     .contact-container{
         border: 1px solid blue;
-    }
+    }*/
     .contact-form{
         width: 100%;
-        border: red 1px solid;
+       /* border: red 1px solid;*/
     }
-/*Footer*/
+/*Footer
     .contact-container2{
         border: 1px solid pink;
         
-    }
+    }*/
     .socials{
         display: inline-block;
     }
