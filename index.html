@@ -106,12 +106,21 @@
     <h2>Contact</h2>
     <div class="contact-container">
         <div class="contact-form">
-            <form action="send_email.php" method="POST" id="emailForm">
+            <form action="https://formspree.io/f/mpwnnqjl" method="POST" id="emailForm">
                 <input type="text" name="name" placeholder="Enter Name" required>
                 <input type="email" name="email" placeholder="Enter Email Address" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send</button>
-                <p id="formMessage"></p>
+
+                <input type="submit" value="Submit" class="btn" id="btnsubmit" onclick="submitForm()">
+
+
+                <script>
+                    window.onbeforeunload = () => {
+                        for (const form of document.getElementsByTagName('form')) {
+                            form.reset();
+                        }
+                    }
+                  </script>
             </form>
         </div>
     </div>

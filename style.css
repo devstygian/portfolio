@@ -272,7 +272,8 @@ h2{
     border: 1px solid rgba(255,255,255,0.2);
     background-color: rgba(30,30,30,0.9);
     color: white;
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     
     
 }
@@ -281,9 +282,10 @@ h2{
 .contact-form textarea::placeholder {
     color: #aaa;
     font-size: 10px;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
-.contact-form button {
+.contact-form .btn {
     padding: 12px;
     border-radius: 8px;
     border: none;
@@ -296,9 +298,10 @@ h2{
     justify-content: center;
     display: flex;
     margin: 0 auto;
+    font-size: 18px;
 }
 
-.contact-form button:hover {
+.contact-form .btn:hover {
     color: #0f0f0f;
     background-color: #3460d0;
 }
