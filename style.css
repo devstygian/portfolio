@@ -3,14 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: 'Minecraft';
-    src: url('fonts/Minecraft.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 body {
-    font-family: 'Minecraft', 'Press Start 2P', sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
     background-color: #0f0f0f;
     color: rgba(255, 255, 255, 0.842);
     scroll-behavior: smooth;
@@ -579,8 +573,7 @@ section {
         margin-bottom: 50px;
         margin-top: 50px;
         margin-left: -65px;   
-        width: 80vw;
-        
+        width: 80vw; 
     }
 /*Email
     .contact-container{
@@ -615,7 +608,38 @@ section {
        /* border: 1px solid red;*/
         padding: 0 50px;
     }
-    .project-card{
-        margin-right: -500px;
+    .project-card{ /*SECOND CONTAINER*/
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: -65px;   
+        width: 80vw; 
+    }
+}
+@media(max-width: 300px){
+    .hamburger{
+        margin-right: -80%;
+    }
+    .bar{
+        width: 20px;
+        height: 2px;
+    }
+    .nav-logo{
+        margin-left: -80%;
+        font-size: 15px;
+    }
+        .about-text{
+        text-align:center;
+        max-height: 100%;
+        font-size: 3vw;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+       /* border: 1px solid red;*/
+        padding: 0 50px;
+    }
+    .project-card{ /*SECOND CONTAINER*/
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: -65px;   
+        width: 75vw; 
     }
 }
