@@ -334,6 +334,7 @@ h2{
     color: #ddd;
     text-decoration: none;
     transition: .3s;
+    font-size: 20px;
 }
 
 .socials a:hover {
@@ -367,6 +368,9 @@ footer {
 /***********************************************************************************************/
 
 @media only screen and (max-width: 768px) {
+      #about h2{
+        margin-bottom:-15px;
+    }
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -606,6 +610,15 @@ section {
         margin-top: 50px;
         margin-left: -65px;   
         width: 80vw; 
+    }
+    .about-text{
+        text-align:center;
+        max-height: 100%;
+        font-size: 3vw;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+       /* border: 1px solid red;*/
+        padding: 0 50px;
     }
 }
 @media(max-width: 300px){
