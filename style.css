@@ -197,7 +197,7 @@ h2{
     gap: 25px;
     margin-top: 20px;
     font-size: 18px;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-card {
@@ -214,11 +214,13 @@ h2{
 .project-card h3 {
     margin-bottom: 10px;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .project-card p {
     flex-grow: 1;
     color: #ccc;
+    font-size: 15px;
     margin-bottom: 15px;
 }
 
@@ -528,6 +530,7 @@ section {
         margin-left: -15%;
     }
 }
+
 @media(max-width: 500px){
 /*About
     .about-container{
@@ -546,8 +549,13 @@ section {
 /*PROJECT*/
     .project-card h3{
         text-align: left;
-        width: 100%;
-        
+        font-size: 3vw;  
+    }
+    .project-card p{
+        font-size: 2.5vw;
+    }
+    .btn {
+        font-size: 100vw;
     }
     #projects{
         max-width: 100%;
@@ -556,14 +564,14 @@ section {
 
     }
     .projects-container{
-        padding-left: -100000px;
-        margin: auto;
-        max-width: 100%;
+        
+        max-width: 100vw;
         display: inline;
         font-size: 15px;
     }
     .project-card{
         margin-bottom: 50px;
+        width: auto;
     }
 /*Email
     .contact-container{
