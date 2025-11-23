@@ -516,7 +516,7 @@ section {
         max-height: 100%;
         font-size: 20px;
         display: flex;
-        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         /*border: 1px solid red;*/
         
         padding: 0 50px;
@@ -541,7 +541,7 @@ section {
         max-height: 100%;
         font-size: 15px;
         display: flex;
-        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Open Sans', sans-serif;
        /* border: 1px solid red;*/
         padding: 0 50px;
     }
@@ -599,7 +599,7 @@ section {
         max-height: 100%;
         font-size: 3.5vw;
         display: flex;
-        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Open Sans', sans-serif;
        /* border: 1px solid red;*/
         padding: 0 50px;
     }
