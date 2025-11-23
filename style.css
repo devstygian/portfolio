@@ -599,7 +599,7 @@ section {
         .about-text{
         text-align:center;
         max-height: 100%;
-        font-size: 3.5vw;
+        font-size: 3.50vw;
         display: flex;
         font-family: 'Open Sans', sans-serif;
        /* border: 1px solid red;*/
@@ -610,15 +610,6 @@ section {
         margin-top: 50px;
         margin-left: -65px;   
         width: 80vw; 
-    }
-    .about-text{
-        text-align:center;
-        max-height: 100%;
-        font-size: 3vw;
-        display: flex;
-        font-family: 'Open Sans', sans-serif;
-       /* border: 1px solid red;*/
-        padding: 0 50px;
     }
 }
 @media(max-width: 300px){
