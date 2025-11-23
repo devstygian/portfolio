@@ -167,7 +167,7 @@ h2{
     color: #b8b8b8;
     line-height: 1.7;
     font-size: 18px;
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .about-image {
@@ -197,7 +197,7 @@ h2{
     gap: 25px;
     margin-top: 20px;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .project-card {
