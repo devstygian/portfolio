@@ -177,10 +177,10 @@ h2{
 }
 
 .about-image img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 15px rgba(74,120,255,0.2);
 }
