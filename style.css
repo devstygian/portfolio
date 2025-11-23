@@ -554,9 +554,6 @@ section {
     .project-card p{
         font-size: 2.5vw;
     }
-    .btn {
-        font-size: 100vw;
-    }
     #projects{
         max-width: 100%;
         width: 100%;
