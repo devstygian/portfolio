@@ -533,6 +533,10 @@ section {
 
 /* Responsive adjustments for smaller screens */
 @media(max-width: 500px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
 /*About
     .about-container{
         border: 1px solid rgb(251, 255, 0);
@@ -548,6 +552,11 @@ section {
     }
 
 /*PROJECT*/
+    #projects h2{
+        margin-bottom: -40px;
+        font-size: 5vw;
+
+    }
     .project-card h3{
         text-align: left;
         font-size: 4vw;  
@@ -568,9 +577,11 @@ section {
     }
     .project-card{ /*SECOND CONTAINER*/
         margin-bottom: 50px;
-        width: 80vw;
-        margin-left: -60px;
-        
+        margin-top: 50px;
+        margin-left: -50px;   
+        margin-right: auto;
+        width: 200%;
+
         
     }
 /*Email
@@ -605,5 +616,8 @@ section {
         font-family: 'Open Sans', sans-serif;
        /* border: 1px solid red;*/
         padding: 0 50px;
+    }
+    .project-card{
+        margin-right: -500px;
     }
 }
