@@ -589,4 +589,13 @@ section {
     .nav-logo{
         margin-left: -35%;
     }
+        .about-text{
+        text-align:center;
+        max-height: 100%;
+        font-size: 3.5vw;
+        display: flex;
+        font-family: 'Arial Narrow', Arial, sans-serif;
+       /* border: 1px solid red;*/
+        padding: 0 50px;
+    }
 }
