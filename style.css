@@ -112,6 +112,7 @@ a:hover {
 #home h1 {
     font-size: 40px;
     font-weight: 900;
+    margin: 15px 20px;
 }
 
 #home p {
@@ -415,7 +416,7 @@ section {
 }
 
 /* About Section */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
    #home h1 {
         font-size: 5vw;
     }
