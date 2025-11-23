@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 23%;
+}
 body {
     font-family: 'Press Start 2P', sans-serif;
     background-color: #0f0f0f;
     color: rgba(255, 255, 255, 0.842);
     scroll-behavior: smooth;
 }
-
+h2{
+    margin-bottom: 30px;
+}
 /* ---------- NAVBAR ---------- */
 
 li {
@@ -60,6 +66,7 @@ a {
 
 .nav-item {
     margin-left: 5rem;
+    cursor: pointer;
 }
 
 .nav-link{
@@ -70,11 +77,11 @@ a {
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: #4a2ff78e;
 }
 
 a:hover {
-    color: #4A78FF;
+    color: #4a77ff8e;
 }
 
 .nav-logo {
@@ -145,7 +152,7 @@ h2{
     margin-top: 100px;
     padding: 0 100px;
     margin-bottom: 100px;
-    padding-bottom: 10%;
+    padding-bottom: 16%;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .about-container {
@@ -252,8 +259,10 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-right: 30%;
-    padding-left: 30%;
+    width: 50vw;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .contact-form input,
@@ -462,7 +471,7 @@ section {
 
     .contact-form button {
         margin: 0 auto;
-        width: 50%;
+        
     }
 }
 
@@ -531,10 +540,6 @@ section {
         padding: 0;
         margin: 0;
     }
-/*About
-    .about-container{
-        border: 1px solid rgb(251, 255, 0);
-        }*/
     .about-text{
         text-align:center;
         max-height: 100%;
@@ -575,23 +580,11 @@ section {
         margin-left: -65px;   
         width: 80vw; 
     }
-/*Email
-    .contact-container{
-        border: 1px solid blue;
-    }*/
-    .contact-form{
-        width: 100%;
-       /* border: red 1px solid;*/
-    }
-/*Footer
-    .contact-container2{
-        border: 1px solid pink;
-        
-    }*/
     .socials{
         display: inline-block;
     }
 }
+
 @media(max-width: 400px){
     .hamburger{
         margin-right: -35%;
