@@ -12,7 +12,7 @@
 body {
     font-family: 'Minecraft', 'Press Start 2P', cursive, sans-serif;
     background-color: #0f0f0f;
-    color: white;
+    color: rgba(255, 255, 255, 0.842);
     scroll-behavior: smooth;
 }
 
@@ -415,6 +415,17 @@ section {
 }
 
 /* About Section */
+@media (max-width: 600px) {
+   #home h1 {
+        font-size: 5vw;
+    }
+    #home p {
+        font-size: 2vw;
+    }
+    .buttons {
+        font-size: 1.80vw;
+    }
+}
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
