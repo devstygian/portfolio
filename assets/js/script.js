@@ -34,3 +34,14 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+const accBtns = document.querySelectorAll(".acc-btn");
+
+accBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const accBody = btn.nextElementSibling;
+    
+    accBody.classList.toggle("open");
+  });
+});
+

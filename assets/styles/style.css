@@ -9,7 +9,7 @@ html{
 }
 body {
     font-family: 'Press Start 2P', sans-serif;
-    background-color: #161616;
+    background-color: #050505;
     color: rgba(255, 255, 255, 0.842);
     scroll-behavior: smooth;
 }
@@ -104,7 +104,7 @@ a:hover {
     text-align: center;
     background: 
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url('assets/img/B1.jpg');
+        url('../../assets/img/pixel1.gif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -216,14 +216,14 @@ h2{
 }
 .column a{
     text-decoration: none;
-    color: rgb(22, 22, 22);
+    color: rgb(240, 234, 234);
 }
 .column i{
     font-size: 13px;
 
 }
 .content {
-  background-color: rgb(236, 227, 227);
+  background-color: rgba(236, 227, 227, 0.082);
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -253,7 +253,68 @@ h2{
 
 .content p {
   flex-grow: 1; /* makes card heights equal */
-    color: #201f1f;
+    color: #cfc1c1;
+}
+/* ---------- Certificate SECTION ---------- */
+
+.accordion {
+  max-width: 500px;       
+  margin: 40px auto;      
+  text-align: center;      
+}
+
+/* Accordion Button */
+.acc-btn {
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid #eaebf0;
+  color: white;
+  width: 100%;
+  text-align: center;      
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  transition: background 0.3s ease;
+}
+
+.acc-btn:hover {
+  background-color: #4a2ff78e;
+}
+
+/* img main con */
+.acc-body {
+  max-height: 0;               
+  overflow: hidden;
+  transition: max-height 1.5s ease; 
+  padding: 0 0;               
+}
+
+/* When active/open */
+.acc-body.open {
+  max-height: 500px;          
+  padding: 0 0;             
+}
+
+
+/* Certificate Images */
+.acc-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0 auto 10px auto;
+  display: block;
+
+  /* Smooth transition for zoom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+/* Hover effect */
+.acc-img:hover {
+  transform: scale(1.2); /* zoom in 10% */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* more prominent shadow */
 }
 
 /* ---------- Email SECTION ---------- */
@@ -579,12 +640,13 @@ section {
         padding: 0 50px;
     }
     #projects h2{
-        margin-bottom: -40px;
+        margin-bottom: 40px;
         font-size: 5vw;
     }
     .socials{
         display: inline-block;
     }
+   
 }
 
 @media(max-width: 400px){
