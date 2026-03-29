@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Joshua Alvarez — Full Stack Web Developer from the Philippines. Building web apps with HTML, CSS, JS, PHP, MySQL, and C#.">
     <title>DevStygian | Web Developer</title>
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon_io/favicon-16x16.png">
-    <link rel="shortcut icon" href="/assets/favicon/favicon_io/favicon.ico"> 
+    <link rel="shortcut icon" href="/assets/favicon/favicon_io/favicon.ico">
     <link rel="manifest" href="/assets/favicon/favicon_io/site.webmanifest">
-    <!-- Google Font -->
-     <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
+    <!-- Icons & Fonts -->
+    <script src="https://kit.fontawesome.com/f02a36f28e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 
 <body>
 
-    <!-- ------------ NAVBAR ------------ -->
-    
+    <!-- PAGE LOADER -->
+    <div id="loader">
+        <div class="loader-pixel">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+        <p class="loader-text">LOADING...</p>
+    </div>
+
+    <!-- NAVBAR -->
     <header class="header">
         <nav class="navbar">
             <a href="#home" class="nav-logo">STY</a>
             <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link smoothScroll">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link smoothScroll">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link smoothScroll">Contact</a>
-                </li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certificate" class="nav-link">Certs</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -46,138 +55,249 @@
         </nav>
     </header>
 
-    <!-- ------------ HERO SECTION ------------ -->
+    <!-- HERO SECTION -->
     <section id="home">
         <div class="hero-section">
-             <p>Hey👋! my name is</p>
-            <h1>Joshua Alvarez</h1>
-            <p>I'm A Full Stack Web Developer</p>
+            <p class="hero-greeting">Hey 👋 My name is</p>
+            <h1><span>Joshua Alvarez</span></h1>
+            <p class="hero-sub">Full Stack Web Developer &amp; IT Student</p>
             <div class="buttons">
-                <a href="#projects" class="btn">View Projects</a>
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
             </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-dot"></div>
+            <div class="scroll-dot"></div>
+            <div class="scroll-dot"></div>
         </div>
     </section>
 
-    <!-- ------------ ABOUT SECTION ------------ -->
+    <!-- ABOUT SECTION -->
     <section id="about">
-        <h2>About</h2><br>
+        <div class="section-heading">
+            <p class="section-tag">Who I Am</p>
+            <h2>About</h2>
+        </div>
         <div class="about-container">
             <div class="about-text">
                 <p>
-                    I am Joshua Alvarez -a third-year Information Technology student and a hands-on developer from the Philippines.
-                    I build web applications. I work with HTML, CSS, JavaScript (For frontend) PHP, MySQL, (For Backend) and C# (WinForms).
-                    I create functional systems like barangay portals,  occasionally pretend I know what I'm doing
-                    . If you want a teammate who learns fast and ships working demos, let's connect.
+                    I'm Joshua Alvarez — a third-year Information Technology student and hands-on developer from the
+                    Philippines.
+                    I build web applications from the ground up, working across the full stack to ship functional,
+                    clean, and reliable software.
                 </p>
+                <p>
+                    If you want a teammate who learns fast, takes ownership, and ships working demos — let's connect.
+                </p>
+                <div class="about-tags">
+                    <span class="about-tag">HTML &amp; CSS</span>
+                    <span class="about-tag">JavaScript</span>
+                    <span class="about-tag">PHP</span>
+                    <span class="about-tag">MySQL</span>
+                    <span class="about-tag">C# WinForms</span>
+                    <span class="about-tag">Philippines 🇵🇭</span>
+                </div>
             </div>
             <div class="about-image">
-                <img src="assets/img/what.jpg" alt="Null">
+                <img src="assets/img/what.jpg" alt="Joshua Alvarez">
             </div>
         </div>
     </section>
 
-    <!-- ------------ PROJECTS SECTION ------------ -->
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="section-heading">
+            <p class="section-tag">What I Use</p>
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-container">
+
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="skill-pct">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-pct">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-pct">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label"><i class="fa-brands fa-microsoft"></i> C# WinForms</span>
+                        <span class="skill-pct">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="70%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects">
-        <h2>Projects</h2><br>
+        <div class="section-heading">
+            <p class="section-tag">What I've Built</p>
+            <h2>Projects</h2>
+        </div>
         <div class="row">
 
             <div class="column">
                 <div class="content">
-                <img src="/assets/project/landing-page.png"Project 1">
-                <h3>
-                    <a href="https://github.com/devstygian/Saklaw "><i class="fa-solid fa-link"></i> Barangay Information System &nbsp; </a>
-                    <a href="https://github.com/devstygian/Saklaw"><i class="fa-brands fa-github" style="font-size: 20px;"></i></a>
-                </h3>
-                <p>A full online portal for residents to request documents.</p>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                <img src="/assets/project/KIROKAZE.gif " alt="Project 2">
-                <h3>
-                    <a href="#"><i class="fa-solid fa-link"></i> Ongoing project  &nbsp;</a>
-                    <a href="#"><i class="fa-brands fa-github" style="font-size: 20px;"></i></a>
-                </h3>
-                <p>A tarding App that allow the user to trade any item to other user.</p>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="/assets/project/POS.png " alt="Project 3">
+                    <img src="/assets/project/landing-page.png" alt="Barangay Information System">
                     <h3>
-                        <a href="https://github.com/devstygian/Resto-POS"><i class="fa-solid fa-link"></i> Ongoing project &nbsp;</a>
-                        <a href="https://github.com/devstygian/Resto-POS"><i class="fa-brands fa-github" style="font-size: 20px;"></i></a>
+                        <a href="https://github.com/devstygian/Saklaw"><i class="fa-solid fa-link"></i> Barangay Info
+                            System</a>
+                        <a href="https://github.com/devstygian/Saklaw"><i class="fa-brands fa-github"></i></a>
                     </h3>
-                    <p>POS System</p>
+                    <p>A full online portal for residents to request and track barangay documents.</p>
+                    <span class="project-status">🚧 In Progress</span>
                 </div>
             </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="/assets/project/KIROKAZE.gif" alt="Trading App">
+                    <h3>
+                        <a href="#"><i class="fa-solid fa-link"></i> Trading App</a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </h3>
+                    <p>A trading app that lets users swap items with one another in real time.</p>
+                    <span class="project-status">🚧 In Progress</span>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="/assets/project/POS.png" alt="POS System">
+                    <h3>
+                        <a href="https://github.com/devstygian/Resto-POS"><i class="fa-solid fa-link"></i> Restaurant
+                            POS</a>
+                        <a href="https://github.com/devstygian/Resto-POS"><i class="fa-brands fa-github"></i></a>
+                    </h3>
+                    <p>A point-of-sale system built for restaurant order and billing management.</p>
+                    <span class="project-status">🚧 In Progress</span>
+                </div>
+            </div>
+
         </div>
     </section>
-    <!-- ------------ Certificate SECTION ------------ -->
-     <section id="certificate">
-        <h2>Certificates</h2><br>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificate">
+        <div class="section-heading">
+            <p class="section-tag">Credentials</p>
+            <h2>Certificates</h2>
+        </div>
         <div class="accordion">
-            <button class="acc-btn">Exploring Networking - CISCO</button>
+            <button class="acc-btn">Exploring Networking — CISCO <span class="acc-icon">+</span></button>
             <div class="acc-body">
-                <img src="/assets/certificate/Exploring_Networking.png" class="acc-img" alt="Certificate 1">
+                <img src="/assets/certificate/Exploring_Networking.png" class="acc-img"
+                    alt="Exploring Networking Certificate">
             </div>
 
-            <button class="acc-btn">Networking Basic - CISCO</button>
+            <button class="acc-btn">Networking Basics — CISCO <span class="acc-icon">+</span></button>
             <div class="acc-body">
-                <img src="/assets/certificate/loop.gif" class="acc-img" alt="Certificate 2">
+                <img src="/assets/certificate/loop.gif" class="acc-img" alt="Networking Basics Certificate">
             </div>
         </div>
     </section>
-    <!-- ------------ Email SECTION ------------ -->
+
+    <!-- CONTACT SECTION -->
     <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-container">
-        <div class="contact-form">
-            <form action="https://formspree.io/f/mpwnnqjl" method="POST" id="emailForm">
-                <input type="text" name="name" placeholder="Enter Name" required>
-                <input type="email" name="email" placeholder="Enter Email Address" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-                <input type="submit" value="Submit" class="btn" id="btnsubmit" onclick="submitForm()">
-
-
-                <script>
-                    window.onbeforeunload = () => {
-                        for (const form of document.getElementsByTagName('form')) {
-                            form.reset();
-                        }
-                    }
-                  </script>
-            </form>
+        <div class="section-heading">
+            <p class="section-tag">Let's Talk</p>
+            <h2>Contact</h2>
         </div>
-    </div>
-</section>
 
-    <!-- ------------ CONTACT SECTION ------------ -->
-    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mpwnnqjl" method="POST" id="emailForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <input type="submit" value="Send Message" class="btn" id="btnsubmit">
+                </form>
+            </div>
+        </div>
+
         <div class="contact-container2">
             <div class="socials">
-                <a href="https://x.com/bitebender" ><i class="fa-solid fa-x"></i></a>
-                <a href="https://github.com/devstygian"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i>
+                <a href="https://x.com/bitebender" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/devstygian" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- ------------ FOOTER ------------ -->
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn" title="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- FOOTER -->
     <footer>
-        Copyright © Devstygian 2024
+        Copyright &copy; Devstygian 2024
     </footer>
 
-    <!-- External JS -->
+    <!-- JS -->
     <script src="/assets/js/script.js"></script>
 
     <script>
-         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        };
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
 
 </body>
+
 </html>
